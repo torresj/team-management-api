@@ -1,0 +1,55 @@
+spring:
+  # Maria DB config
+  datasource:
+    url: jdbc:mariadb://footballdb:3306/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      database-platform: org.hibernate.dialect.MariaDB10Dialect
+      ddl-auto: update
+    properties:
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: UNSPECIFIED
+
+#Admin user
+admin:
+  user: ${ADMIN_USER}
+  password: ${ADMIN_PASSWORD}
+
+#Default password
+default:
+  password: ${DEFAULT_PASSWORD}
+
+#Loggin
+logging:
+  config: classpath:logback-spring-prod.xml
+
+#JWT config
+jwt:
+  token:
+    secret: ${JWT_TOKEN_SECRET}
+    expiration: ${JWT_TOKEN_EXPIRATION}
+    prefix: Bearer
+    header: Authorization
+    issuer:
+      info: football-team-management-api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  health:
+    livenessState:
+      enabled: true
+    readinessState:
+      enabled: true
