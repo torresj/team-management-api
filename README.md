@@ -3,7 +3,7 @@ Football team management API
 
 [![torresj](https://circleci.com/gh/torresj/football-team-management-api.svg?style=shield)](https://app.circleci.com/pipelines/github/torresj/football-team-management-api)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Coverage Status](https://coveralls.io/repos/github/torresj/football-team-management-api/badge.svg?branch=main)](https://coveralls.io/github/torresj/football-team-management-api?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/torresj/team-management-api/badge.svg?branch=main)](https://coveralls.io/github/torresj/team-management-api?branch=main)
 
 
 [![CircleCI](https://dl.circleci.com/insights-snapshot/gh/torresj/football-team-management-api/main/build_and_deploy/badge.svg?window=30d)](https://app.circleci.com/insights/github/torresj/football-team-management-api/workflows/build_and_deploy/overview?branch=main&reporting-window=last-30-days&insights-snapshot=true)
