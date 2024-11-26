@@ -142,7 +142,7 @@
 						</ports>
 					</container>
 					<to>
-						<image>registry.torresj.com/football-team-management-api:${project.version}</image>
+						<image>registry.torresj.es/football-team-management-api:${project.version}</image>
 					</to>
 				</configuration>
 				<executions>
