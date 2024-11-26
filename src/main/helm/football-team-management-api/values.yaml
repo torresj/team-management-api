@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.torresj.com
+  repository: registry.torresj.es
   name: football-team-management-api
   version: @project.version@
   pullPolicy: IfNotPresent
@@ -52,7 +52,7 @@ ingress:
   enabled: true
   controller:
     class: nginx
-  host: api.football.torresj.com
+  host: api.pkmh.es
   path: /
   tls:
     enabled: true
