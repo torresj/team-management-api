@@ -52,7 +52,7 @@ ingress:
   enabled: true
   controller:
     class: nginx
-  host: api.pkmh.es
+  host: api.pkmh.torresj.es
   path: /
   tls:
     enabled: true
